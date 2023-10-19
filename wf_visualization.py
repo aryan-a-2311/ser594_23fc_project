@@ -10,8 +10,8 @@ def graphs(dataSet):
     sns.set(style="whitegrid")
 
     # Define the list of quantitative and qualitative features
-    quantFeatures = ['RAM', 'Memory', 'Battery Capacity', 'Item Weight', 'Price', 'Screen Size', 'Sales based on Ratings']
-    qualFeatures = ['Brand', 'Model']
+    quantFeatures = ['Item Weight', 'Memory', 'Price', 'Battery Capacity']
+    qualFeatures = ['Brand']
 
     # Generate scatter plots for all pairs of quantitative features
     sns.pairplot(dataSet[quantFeatures])
