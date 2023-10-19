@@ -86,13 +86,15 @@ def correlation(dataSet):
     # Save the half-matrix to a text file
     corrMatrix.to_csv('data_processing/correlations.txt', sep='\t')
     
-
-if __name__ == '__main__':
-    warnings.filterwarnings("ignore")
-    
+def visualizationMain():
     # Load the dataset
     data = pd.read_csv('data_processing/processedData.csv')
     
+    # Calling functions
     graphs(data)
     stats(data)
     correlation(data)
+
+if __name__ == '__main__':
+    warnings.filterwarnings("ignore")
+    visualizationMain()

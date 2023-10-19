@@ -83,7 +83,7 @@ def brandPreprocess(brand):
             return standardName
     return brand
 
-if __name__ == "__main__":
+def processingMain():
     originalData = pd.read_csv("data_original/originalData.csv")
     processedData = originalData.copy()
 
@@ -143,3 +143,6 @@ if __name__ == "__main__":
 
     # Save the processed data to a new CSV file
     processedData.to_csv('data_processing/processedData.csv', index=False)
+
+if __name__ == "__main__":
+    processingMain()
