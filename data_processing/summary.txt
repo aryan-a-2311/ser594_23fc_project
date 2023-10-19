@@ -1,0 +1,25 @@
+Summary:
+
+Quantitative Features:
+Item Weight:
+Min: 65.0
+Max: 3057.21
+Median: 198.45
+Memory:
+Min: 2.0
+Max: 512.0
+Median: 128.0
+Price:
+Min: 14.99
+Max: 1199.99
+Median: 139.99
+Battery Capacity:
+Min: 300.0
+Max: 50000.0
+Median: 5000.0
+
+Qualitative Features:
+Brand:
+Number of Categories: 81
+Most Frequent Category: samsung
+Least Frequent Category: zte
