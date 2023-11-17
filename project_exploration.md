@@ -75,13 +75,6 @@ Gaining an understanding of the connections among these different factors can pr
 [2] Mehta, S. (2023, May 26). 8 of the Most Substantial Consumer Technology Trends in 2023. ABI Research.
 [3] Kiran, V. A., & Jebakumar, R. (2022, January). Prediction of Mobile Phone Price Class using Supervised Machine Learning Techniques. International Journal of Innovative Science and Research Technology, 7(1).
 
-## Data Transformation
-### Transformation N
-**Description:** TODO
-
-**Soundness Justification:** TODO
-
-(duplicate above as many times as needed; remove this line when done)
 
 ## Data Transformation
 ### Transformation 1
