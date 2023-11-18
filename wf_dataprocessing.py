@@ -133,7 +133,7 @@ def processingMain():
     processedData['Price'].fillna(remainingPrice, inplace=True)
     
     # Handling Outliers
-    processedData['RAM'] = processedData['RAM'].apply(lambda x: '16+' if x > 16 else ('-1' if x < 1 else x))
+    processedData['RAM'] = processedData['RAM'].apply(lambda x: '17' if x > 16 else ('0' if x < 1 else x))
 
     # For the 'Battery Capacity' column, correct the 4,200,000 values to 4200 and scale up values less than 100
     processedData['Battery Capacity'] = processedData['Battery Capacity'].apply(lambda x: 4200 if x == 4200000 else (x * 100 if x < 100 else x))
