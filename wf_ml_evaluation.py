@@ -40,15 +40,15 @@ if __name__ == "__main__":
     # Save the training and testing datasets in the 'data_processing' folder
     save_data(train, test)
 
-    # # Making the models by calling other python files
-    # # K-Means-3
-    # subprocess.run(['python', 'wf_ml_training_k_3.py'])
-    # # K-Means-4
-    # subprocess.run(['python', 'wf_ml_training_k_4.py'])
-    # # K-Means-5
-    # subprocess.run(['python', 'wf_ml_training_k_5.py'])
-    # # K-Means-8
-    # subprocess.run(['python', 'wf_ml_training_k_8.py'])
+    # Making the models by calling other python files
+    # K-Means-3
+    subprocess.run(['python', 'wf_ml_training_k_3.py'])
+    # K-Means-4
+    subprocess.run(['python', 'wf_ml_training_k_4.py'])
+    # K-Means-5
+    subprocess.run(['python', 'wf_ml_training_k_5.py'])
+    # K-Means-8
+    subprocess.run(['python', 'wf_ml_training_k_8.py'])
 
     # # Making predictions by calling other python files
     # subprocess.run(['python', 'wf_ml_prediction.py'])
