@@ -50,8 +50,8 @@ if __name__ == "__main__":
     # K-Means-8
     subprocess.run(['python', 'wf_ml_training_k_8.py'])
 
-    # # Making predictions by calling other python files
-    # subprocess.run(['python', 'wf_ml_prediction.py'])
+    # Making predictions by calling other python files
+    subprocess.run(['python', 'wf_ml_prediction.py'])
 
     # # Evaluation
     # trainData = pd.read_csv('data_processing/training_set.csv')
