@@ -53,42 +53,42 @@ if __name__ == "__main__":
     # Making predictions by calling other python files
     subprocess.run(['python', 'wf_ml_prediction.py'])
 
-    # # Evaluation
-    # trainData = pd.read_csv('data_processing/training_set.csv')
+    # Evaluation
+    trainData = pd.read_csv('data_processing/training_set.csv')
 
-    # # Loading K-Means-3 model and scaler
-    # with open('models/kmeans_model_k_3.pkl', 'rb') as model_file:
-    #     model3 = pickle.load(model_file)
-    # with open('models/scaler_k_3.pkl', 'rb') as scaler_file:
-    #     scaler3 = pickle.load(scaler_file)
+    # Loading K-Means-3 model and scaler
+    with open('models/kmeans_model_k_3.pkl', 'rb') as model_file:
+        model3 = pickle.load(model_file)
+    with open('models/scaler_k_3.pkl', 'rb') as scaler_file:
+        scaler3 = pickle.load(scaler_file)
 
-    # # Loading K-Means-4 model and scaler
-    # with open('models/kmeans_model_k_4.pkl', 'rb') as model_file:
-    #     model4 = pickle.load(model_file)
-    # with open('models/scaler_k_4.pkl', 'rb') as scaler_file:
-    #     scaler4 = pickle.load(scaler_file)
+    # Loading K-Means-4 model and scaler
+    with open('models/kmeans_model_k_4.pkl', 'rb') as model_file:
+        model4 = pickle.load(model_file)
+    with open('models/scaler_k_4.pkl', 'rb') as scaler_file:
+        scaler4 = pickle.load(scaler_file)
 
-    # # Loading K-Means-5 model and scaler
-    # with open('models/kmeans_model_k_5.pkl', 'rb') as model_file:
-    #     model5 = pickle.load(model_file)
-    # with open('models/scaler_k_5.pkl', 'rb') as scaler_file:
-    #     scaler5 = pickle.load(scaler_file)
+    # Loading K-Means-5 model and scaler
+    with open('models/kmeans_model_k_5.pkl', 'rb') as model_file:
+        model5 = pickle.load(model_file)
+    with open('models/scaler_k_5.pkl', 'rb') as scaler_file:
+        scaler5 = pickle.load(scaler_file)
     
-    # # Loading K-Means-8 model and scaler
-    # with open('models/kmeans_model_k_8.pkl', 'rb') as model_file:
-    #     model8 = pickle.load(model_file)
-    # with open('models/scaler_k_8.pkl', 'rb') as scaler_file:
-    #     scaler8 = pickle.load(scaler_file)
+    # Loading K-Means-8 model and scaler
+    with open('models/kmeans_model_k_8.pkl', 'rb') as model_file:
+        model8 = pickle.load(model_file)
+    with open('models/scaler_k_8.pkl', 'rb') as scaler_file:
+        scaler8 = pickle.load(scaler_file)
 
-    # evaluationResult3 = evaluation(trainData, model3, scaler3)
-    # evaluationResult4 = evaluation(trainData, model4, scaler4)
-    # evaluationResult5 = evaluation(trainData, model5, scaler5)
-    # evaluationResult8 = evaluation(trainData, model8, scaler8)
+    evaluationResult3 = evaluation(trainData, model3, scaler3)
+    evaluationResult4 = evaluation(trainData, model4, scaler4)
+    evaluationResult5 = evaluation(trainData, model5, scaler5)
+    evaluationResult8 = evaluation(trainData, model8, scaler8)
 
-    # evaluationResults = f"\nK-Means-3 Evaluation: {evaluationResult3}\nK-Means-4 Evaluation: {evaluationResult4}  \nK-Means-5 Evaluation: {evaluationResult5}\nK-Means-8 Evaluation: {evaluationResult8}"
-    # print(evaluationResults)
+    evaluationResults = f"\nK-Means-3 Evaluation: {evaluationResult3}\nK-Means-4 Evaluation: {evaluationResult4}  \nK-Means-5 Evaluation: {evaluationResult5}\nK-Means-8 Evaluation: {evaluationResult8}"
+    print(evaluationResults)
 
-    # # Save the results to a file
-    # output_path = 'evaluation/summary.txt'
-    # with open(output_path, 'w') as file:
-    #     file.write(evaluationResults)
+    # Save the results to a file
+    output_path = 'evaluation/summary.txt'
+    with open(output_path, 'w') as file:
+        file.write(evaluationResults)

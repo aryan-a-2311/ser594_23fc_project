@@ -1,0 +1,5 @@
+
+K-Means-3 Evaluation: Silhouette Score: 0.8358107757192014, Davies-Bouldin Score: 0.10180539741813875
+K-Means-4 Evaluation: Silhouette Score: 0.2869179072347662, Davies-Bouldin Score: 0.7466999845180431  
+K-Means-5 Evaluation: Silhouette Score: 0.32380169192346736, Davies-Bouldin Score: 0.8007323993360869
+K-Means-8 Evaluation: Silhouette Score: 0.4267428843439245, Davies-Bouldin Score: 0.660877567599965
