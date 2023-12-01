@@ -32,6 +32,11 @@ Sales based on Ratings: Approximate sales figures derived on the basis of the nu
 
 **Dataset File Hash(es):** 2a5d6c4c43c0e5c34db00c8f60877ca6
 
+## Note: 
+Please refrain from running "wf_datagen.py" unless it is completely necessary. This will result in the generation of a new dataset, which will overwrite the existing dataset. This will result in the loss of the existing dataset and the need to re-run the data transformation and visualization scripts. This might also result in the current .md files about the project exploration and cluster exploration to become outdated.
+
+Also the complete running of the file takes about 2.5-3 hrs to complete. Hence, please don't run it.
+
 ## Interpretable Records
 ### Record 1
 **Raw Data:** 
